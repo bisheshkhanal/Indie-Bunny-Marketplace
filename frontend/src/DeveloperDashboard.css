@@ -1,0 +1,156 @@
+/* DeveloperDashboard.css */
+.developer-dashboard {
+    max-width: 1200px;
+    margin: var(--space-xl) auto;
+    padding: 0 var(--space-xl);
+  }
+  
+  .developer-dashboard h2 {
+    color: var(--primary);
+    margin-bottom: var(--space-lg);
+  }
+  
+  .dashboard-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--space-lg);
+    margin-bottom: var(--space-xl);
+  }
+  
+  .stat-card {
+    background-color: var(--card-bg);
+    border-radius: 0.5rem;
+    padding: var(--space-lg);
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .stat-card h3 {
+    color: var(--text-light);
+    font-size: 1rem;
+    margin-bottom: var(--space-sm);
+  }
+  
+  .stat-card p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary);
+  }
+  
+  .add-game-btn {
+    margin-bottom: var(--space-lg);
+    background-color: var(--secondary);
+  }
+  
+  .game-form {
+    background-color: var(--card-bg);
+    border-radius: 0.5rem;
+    padding: var(--space-lg);
+    margin-bottom: var(--space-lg);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-group {
+    margin-bottom: var(--space-md);
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: var(--space-xs);
+    color: var(--text-light);
+    font-size: 0.9rem;
+  }
+  
+  .form-group input,
+  .form-group textarea,
+  .form-group select {
+    width: 100%;
+    padding: var(--space-sm);
+    border: 1px solid var(--border);
+    border-radius: 0.25rem;
+    font-family: var(--font-main);
+  }
+  
+  .form-row {
+    display: flex;
+    gap: var(--space-md);
+  }
+  
+  .form-row .form-group {
+    flex: 1;
+  }
+  
+  .checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+  }
+  
+  .checkbox-group label {
+    margin-bottom: 0;
+  }
+  
+  .hint {
+    font-size: 0.8rem;
+    color: var(--text-light);
+    margin-top: var(--space-xs);
+    margin-left: 1.5rem;
+  }
+  
+  .submit-btn {
+    width: 100%;
+  }
+  
+  .your-games h3 {
+    color: var(--primary);
+    margin-bottom: var(--space-lg);
+  }
+  
+  .games-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+  }
+  
+  .game-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--space-md);
+    background-color: var(--card-bg);
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+  
+  .game-info h4 {
+    color: var(--text);
+    margin-bottom: var(--space-xs);
+  }
+  
+  .game-info p {
+    color: var(--text-light);
+    font-size: 0.9rem;
+  }
+  
+  .game-actions {
+    display: flex;
+    gap: var(--space-sm);
+  }
+  
+  .edit-btn {
+    background-color: var(--primary-light);
+  }
+  
+  .stats-btn {
+    background-color: var(--background);
+    color: var(--text);
+    border: 1px solid var(--border);
+  }
+  
+  .no-games {
+    text-align: center;
+    padding: var(--space-xl);
+    color: var(--text-light);
+    background-color: var(--card-bg);
+    border-radius: 0.5rem;
+  }

@@ -1,0 +1,161 @@
+/* MysteryReward.css */
+
+.mystery-reward {
+  text-align: center;
+  padding: 3rem 2rem;
+  color: white;
+  background-color: #0f0e17;
+  font-family: var(--font-main);
+}
+
+.mystery-reward h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--secondary);
+}
+
+.mystery-reward p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  color: #ccc;
+}
+
+/* Wheel Container */
+.wheel-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.wheel {
+  position: relative;
+  width: 520px;
+  height: 520px;
+  border-radius: 50%;
+  border: 8px solid #e67ee7;
+  background: conic-gradient(
+    #8c41e9 0deg 60deg,
+    #1a1625 60deg 120deg,
+    #8c41e9 120deg 180deg,
+    #1a1625 180deg 240deg,
+    #8c41e9 240deg 300deg,
+    #1a1625 300deg 360deg
+  );
+  box-shadow: 0 0 30px #e67ee7, 0 0 50px rgba(140, 65, 233, 0.3);
+  transition: transform 4s ease-in-out;
+  overflow: hidden;
+}
+
+.wheel.spinning {
+  transform: rotate(1080deg);
+}
+
+/* each slice rotates correctly and centers */
+.slice {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  top: 0%;
+  left: 50%;
+  transform-origin: 0% 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slice img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  transform: rotate(-45deg);
+  filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.25));
+}
+
+.pointer {
+  position: absolute;
+  top: calc(50% - 270px);
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 30px solid #e67ee7;
+  z-index: 10;
+  filter: drop-shadow(0 0 8px #e67ee7);
+}
+
+/* Spin Button */
+.spin-button {
+  margin-top: 2rem;
+  background: #8c41e9;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.spin-button:hover {
+  background: #7a36d1;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(140, 65, 233, 0.4);
+}
+
+/* Reward Display */
+.reward-selected {
+  margin-top: 3rem;
+}
+
+.selected-game {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.selected-game img {
+  width: 160px;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+}
+
+.selected-game-info {
+  text-align: left;
+  max-width: 400px;
+}
+
+.selected-game-info h4 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--secondary);
+}
+
+.selected-game-info p {
+  color: #ccc;
+  line-height: 1.6;
+}
+
+.selection-actions {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.confirm-btn,
+.change-btn {
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}

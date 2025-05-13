@@ -1,0 +1,126 @@
+/* TipDeveloper.css */
+
+.tip-developer {
+  max-width: 600px;
+  margin: var(--space-xl) auto;
+  padding: var(--space-xl);
+  background-color: var(--card-bg);
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: var(--font-main);
+}
+
+.tip-developer h2 {
+  color: var(--primary);
+  margin-bottom: var(--space-sm);
+  text-align: center;
+}
+
+.tip-developer p {
+  color: var(--text-light);
+  margin-bottom: var(--space-lg);
+  text-align: center;
+}
+
+.tip-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.amount-selector label {
+  font-weight: 500;
+  margin-bottom: var(--space-sm);
+  display: block;
+}
+
+.amount-options {
+  display: flex;
+  gap: var(--space-sm);
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.amount-btn {
+  background-color: var(--background);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+  padding: var(--space-sm) var(--space-md);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.amount-btn.selected {
+  background-color: var(--primary);
+  color: white;
+  border: none;
+}
+
+.custom-amount {
+  width: 100px;
+  padding: var(--space-sm);
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+  text-align: center;
+  font-weight: 500;
+}
+
+.message-field label {
+  font-weight: 500;
+  margin-bottom: var(--space-sm);
+}
+
+.message-field textarea {
+  padding: var(--space-sm);
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+  resize: vertical;
+  min-height: 100px;
+}
+
+.anonymous-option {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  font-size: 0.9rem;
+  color: var(--text-light);
+}
+
+.submit-tip-btn {
+  width: 100%;
+  font-size: 1.1rem;
+  padding: var(--space-md);
+  margin-top: var(--space-sm);
+}
+
+.tip-note {
+  font-size: 0.9rem;
+  color: var(--text-light);
+  text-align: center;
+}
+
+.tip-success {
+  text-align: center;
+  padding: var(--space-xl);
+}
+
+.tip-success h2 {
+  color: var(--success);
+  margin-bottom: var(--space-md);
+}
+
+.view-reward-btn {
+  display: inline-block;
+  margin-top: var(--space-lg);
+  background-color: var(--secondary);
+  color: white;
+  padding: 0.75rem 2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.view-reward-btn:hover {
+  background-color: var(--secondary-dark);
+}

@@ -1,0 +1,8 @@
+django
+psycopg2-binary
+firebase-admin
+djangorestframework
+dj-database-url
+django-cors-headers
+whitenoise==6.6.0
+
